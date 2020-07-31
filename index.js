@@ -8,7 +8,7 @@ app.use(express.static('public'))
 app.set('view engine', 'pug')
 
 app.get('/', (request, response) => {
-  return response.render('index')
+  return response.render('index', {showdata})
 })
 
 app.get('/season/:id', (request, response) => {
